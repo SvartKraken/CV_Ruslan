@@ -25,3 +25,4 @@ allFotoButton.addEventListener('click', function() {
   // Здійснюємо перехід на сторінку Projects.html
   window.location.href = 'Projects.html';
 });
+

@@ -1,35 +1,59 @@
-
 /* Global */
 
-
-li, .nav-link, .address-item, .nav, .logo-second, .menu, .address, .address-list, .nav-link.current::after, .nav-link.current, .finger-list {
+li,
+.nav-link,
+.address-item,
+.nav,
+.logo-second,
+.menu,
+.address,
+.address-list,
+.nav-link.current::after,
+.nav-link.current,
+.finger-list {
   list-style-type: none;
 }
 
-.contact-links, .contact-name, .list-secondary-item, .deskription, .job-date, .job-list {
+.contact-links,
+.contact-name,
+.list-secondary-item,
+.deskription,
+.job-date,
+.job-list {
   font-weight: 400;
 }
 
-.nav-link, .nav, .logo-second, .headline {
+.nav-link,
+.nav,
+.logo-second,
+.headline {
   color: var(--dark-color);
 }
 
-h1, h4, p, .nav-link, .address-item, .portfolio-list {
+h1,
+h4,
+p,
+.nav-link,
+.address-item,
+.portfolio-list {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  background: #ffffff;
   font-size: 16px;
   line-height: 1.5;
   color: #434455;
 }
 
-h1, h4, p, .nav-link, .address-item, .portfolio-list {
-  
-  
+h1,
+h4,
+p,
+.nav-link,
+.address-item,
+.portfolio-list {
   color: inherit;
 }
 
@@ -37,7 +61,6 @@ h1, h4, p, .nav-link, .address-item, .portfolio-list {
   font-size: 16px;
   line-height: 1.5;
 }
-
 
 .button {
   cursor: pointer;
@@ -58,12 +81,11 @@ h1, h4, p, .nav-link, .address-item, .portfolio-list {
   text-decoration: none;
   outline: none;
   display: block;
-  
 }
 
 .logo {
   color: var(--primary-brand-color);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -82,14 +104,9 @@ h1, h4, p, .nav-link, .address-item, .portfolio-list {
 
 /* Page Studio */
 
-
-
 ul {
-  
-  
   padding-left: 0;
   padding-right: 0;
-  
 }
 
 img {
@@ -98,11 +115,9 @@ img {
   height: auto;
 }
 
-
 .address {
   font-style: normal;
 }
-
 
 /* ============================================================================================================= */
 /* KOLOR */
@@ -183,17 +198,14 @@ img {
   margin-top: 48px;
 }
 
-
 /* ============================================================================================================= */
 /* TEXT */
 html {
   scroll-behavior: smooth;
 }
 
-
 .nav-link {
   font-weight: 500;
-  
 }
 
 .nav-link:hover,
@@ -207,18 +219,14 @@ html {
 .previous-button:hover,
 .previous-button:focus,
 .next-button:hover,
-.next-button:focus
-
- {
+.next-button:focus {
   color: var(--pressed-state-color);
-  
 }
 
 .headline {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  
 }
 
 /* ============================================================================================================= */
@@ -229,20 +237,20 @@ html {
 .header {
   display: flex;
   align-items: center;
-  
 }
 
 .page-header {
   /* min-height: 76px; */
   border-bottom: 1px solid var(--accent-color);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .nav {
   display: flex;
   align-items: center;
-  
 }
 
 .nav .link,
@@ -250,11 +258,10 @@ html {
   padding-top: 24px;
   padding-bottom: 28px;
   position: relative;
-  
 }
 
 .nav-link.current::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -269,7 +276,6 @@ html {
 
 .nav-link.current {
   color: var(--pressed-state-color);
-  
 }
 
 .menu {
@@ -277,19 +283,16 @@ html {
   align-items: center;
   column-gap: 40px;
   margin-left: 76px;
-  
 }
 
 .address {
   margin-left: auto;
-  
 }
 
 .address-list {
   display: flex;
   justify-content: end;
   column-gap: 40px;
-  
 }
 
 .headline {
@@ -301,10 +304,8 @@ html {
 
 /* HERO */
 
-
 /* ============================================================================== */
 /* PAGE PORTFOLIO */
-
 
 /**
   |============================
@@ -317,7 +318,7 @@ html {
   flex-wrap: wrap;
   column-gap: var(--gap-column);
   row-gap: 48px;
-  
+
   margin-bottom: 100px;
 }
 
@@ -336,8 +337,10 @@ html {
 
 .portfolio-list:hover {
   /* border: 1px solid var(--light-color); */
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* OVERLAY */
@@ -367,8 +370,8 @@ html {
 }
 
 .product {
-  position:relative;
-  overflow: hidden; 
+  position: relative;
+  overflow: hidden;
 }
 
 .product-list {
@@ -379,15 +382,15 @@ html {
 .product-list:active,
 .product-list:focus {
   background: var(--pressed-state-color);
-  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1), 0px 4px 3px rgba(0, 0, 0, 0.08),
+  box-shadow:
+    0px 5px 3px rgba(0, 0, 0, 0.1),
+    0px 4px 3px rgba(0, 0, 0, 0.08),
     0px 4px 4px rgba(0, 0, 0, 0.12);
   border: none;
-  transform: scale(2); 
-  position:relative;
+  transform: scale(2);
+  position: relative;
   align-content: center;
-
 }
-
 
 .product-overlay {
   position: absolute;
@@ -407,171 +410,159 @@ html {
 .portfolio-list:hover .product-overlay {
   animation: overlay 1000ms ease-out both;
   visibility: visible;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list:not(:hover) .product-overlay {
   animation: overlay-reverse 1000ms ease-out both;
   visibility: visible;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list:focus .product-overlay {
   animation: overlay 1000ms ease-out both;
   visibility: visible;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 
 /* CV */
 
-
 aside {
-    width: 373px;
-    /* висота */
-    background: #1E2939;   
+  min-width: 373px;
+  background: #1e2939;
 }
 
 .name {
-    font-weight: 600;
-    font-size: 32px;
+  font-weight: 600;
+  font-size: 32px;
 }
 
 .cv-photo {
-    display: block;
-    margin: 0 auto;
-    padding-top: 12px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 12px;
 }
 
 .header-secondary {
-    color:#FFFFFF;
-    margin-left: 40px;
+  color: #ffffff;
+  margin-left: 40px;
 }
 
 .contact-links,
 .contact-name {
-    color:#FFFFFF;
-    margin-left: 40px;
-    font-size: 14px;
-    line-height: 24px;
-    text-decoration: none;
-    transition: 250ms;
+  color: #ffffff;
+  margin-left: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  transition: 250ms;
 }
 
 .bold {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 
 .list-secondary-item {
-    color:#FFFFFF;
-    margin-left: 40px;
-    
+  color: #ffffff;
+  margin-left: 40px;
 }
-
 
 main {
-    padding: 88px 102px 88px 102px;  
+  padding: 88px 102px 88px 102px;
 }
-
-.main-deskription {
-    width: 550px;
-}
-
 
 h1 {
-    font-weight: 500;
-    font-size: 45px;
-    line-height: 55px;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 55px;
 }
 
 .deskription {
-    
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-    margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  margin-bottom: 40px;
 }
 
 .projects {
-    width: 485px;
-    margin-bottom: 51px;
-    color: #595959;
+  width: 485px;
+  margin-bottom: 51px;
+  color: #595959;
 }
 
-
 .job-name {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 11px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 11px;
 }
 
 .hightlight {
-    color: #FB6D3A;
-    margin-bottom: 8px;
+  color: #fb6d3a;
+  margin-bottom: 8px;
 }
 
 .job-date {
-    
-    font-size: 12px;
-    line-height: 15px;
-    color: #A8A8A8;  
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
 }
 
 .job-list {
-    
-    font-size: 14px;
-    line-height: 24px;  
-    color: #595959;
-    padding-left: 0;
-    list-style-position: inside;
-    padding-bottom: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  padding-left: 0;
+  list-style-position: inside;
+  padding-bottom: 24px;
 }
 
 .education-name {
-    color:#FFFFFF;
-    margin-top: 47px;
-    margin-left: 40px;
+  color: #ffffff;
+  margin-top: 47px;
+  margin-left: 40px;
 }
 
 .education-place {
-    
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-    margin-bottom: 11px;   
-    margin-left: 40px;
-    
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 11px;
+  margin-left: 40px;
 }
 
 .education-job {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    margin-bottom: 12px;
-    margin-left: 40px;
-    color:#FFFFFF;
-    list-style-position: inside;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 12px;
+  margin-left: 40px;
+  color: #ffffff;
+  list-style-position: inside;
 }
 
 .education-date {
-    
-    font-size: 12px;
-    line-height: 15px;
-    color: #A8A8A8;
-    margin-left: 40px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin-left: 40px;
 }
 
-* { box-sizing: border-box; }
-
+* {
+  box-sizing: border-box;
+}
 
 .scene {
-  border: 1px solid #CCC;
-  margin: 40px 0;
+  border: 1px solid #ccc;
   position: relative;
   width: 210px;
   height: 160px;
@@ -602,22 +593,271 @@ h1 {
   text-align: center;
 }
 
-.carousel__cell:nth-child(9n+1) { background: hsla(  0, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+2) { background: hsla( 40, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+3) { background: hsla( 80, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+4) { background: hsla(120, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+5) { background: hsla(160, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+6) { background: hsla(200, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+7) { background: hsla(240, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+8) { background: hsla(280, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+0) { background: hsla(320, 100%, 50%, 0.8); }
+.carousel__cell:nth-child(9n + 1) {
+  background: hsla(0, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(9n + 2) {
+  background: hsla(40, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(9n + 3) {
+  background: hsla(80, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(9n + 4) {
+  background: hsla(120, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(9n + 5) {
+  background: hsla(160, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(9n + 6) {
+  background: hsla(200, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(9n + 7) {
+  background: hsla(240, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(9n + 8) {
+  background: hsla(280, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(9n + 0) {
+  background: hsla(320, 100%, 50%, 0.8);
+}
 
-.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
-.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
-.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
-.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
-.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
-.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
-.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
-.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
-.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px);
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px);
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px);
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px);
+}
+.carousel__cell:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px);
+}
+.carousel__cell:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px);
+}
+.carousel__cell:nth-child(8) {
+  transform: rotateY(280deg) translateZ(288px);
+}
+.carousel__cell:nth-child(9) {
+  transform: rotateY(320deg) translateZ(288px);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column-reverse; /* Стопчикове відображення з перевернутим порядком */
+  }
+
+  aside {
+    order: 2; /* `aside` буде під `main` */
+  }
+
+  main {
+    order: 1; /* `main` буде над `aside` */
+    width: 100%; /* Повна ширина */
+    padding: 20px; /* Падінг для внутрішнього відступу */
+  }
+
+  main,
+  aside {
+    width: 100%; /* Повна ширина для обох елементів */
+  }
+
+  .carousel__cell {
+    transform: scale(0.8);
+    width: 160px;
+  }
+
+  .scene {
+    width: 180px; /* половина від 210px */
+    height: 145px; /* половина від 270px */
+    perspective: 600px;
+  }
+
+  .carousel {
+    transform: translateZ(-140px); /* половина від -288px */
+  }
+
+  .carousel__cell:nth-child(1) {
+    transform: rotateY(0deg) translateZ(230.4px);
+  }
+  .carousel__cell:nth-child(2) {
+    transform: rotateY(40deg) translateZ(230.4px);
+  }
+  .carousel__cell:nth-child(3) {
+    transform: rotateY(80deg) translateZ(230.4px);
+  }
+  .carousel__cell:nth-child(4) {
+    transform: rotateY(120deg) translateZ(230.4px);
+  }
+  .carousel__cell:nth-child(5) {
+    transform: rotateY(160deg) translateZ(230.4px);
+  }
+  .carousel__cell:nth-child(6) {
+    transform: rotateY(200deg) translateZ(230.4px);
+  }
+  .carousel__cell:nth-child(7) {
+    transform: rotateY(240deg) translateZ(230.4px);
+  }
+  .carousel__cell:nth-child(8) {
+    transform: rotateY(280deg) translateZ(230.4px);
+  }
+  .carousel__cell:nth-child(9) {
+    transform: rotateY(320deg) translateZ(230.4px);
+  }
+
+  .cv-photo {
+    width: 220px;
+  }
+
+  .deskription {
+    font-size: 12px;
+  }
+
+  body,
+  .job-list {
+    font-size: 14px;
+  }
+
+  .project-container {
+    padding: 0; /* Видаляємо відступи для більшого використання доступного простору */
+  }
+
+  .finger-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Знімаємо відступи, якщо вони є */
+  }
+
+  /* Зображення займають всю можливу ширину (мінус відступи) */
+  .finger-item {
+    width: 100%; /* Забезпечує, що елемент списку займає всю ширину контейнера */
+    margin: 10px 0; /* Додаємо трохи місця між елементами */
+  }
+
+  /* Забезпечуємо, що зображення займають всю ширину свого батьківського елемента */
+  .finger-item .product-list img {
+    width: 100%; /* Встановлюємо ширину зображення */
+    height: auto; /* Висота зображення автоматично змінюється для збереження пропорцій */
+  }
+
+  .project-item {
+    width: 100%; /* Займає весь доступний простір */
+    margin-bottom: 20px; /* Додаємо відступ між елементами */
+  }
+
+  .project-image {
+    width: 100%; /* Робимо зображення на повну ширину елемента */
+    height: auto; /* Зберігаємо пропорції зображення */
+  }
+
+  .address {
+    display: none; /* Приховує елементи в мобільному режимі */
+  }
+
+  .product-list {
+    width: 100%; /* Займає 100% ширини від finger-item */
+    margin: 0 auto; /* Центруємо, якщо потрібно */
+  }
+
+  .product-list img {
+    width: 100%; /* Зображення займає всю ширину product-list */
+    height: auto; /* Зберігаємо пропорції зображення */
+  }
+
+  .nav,
+  .nav * {
+    border: none !important;
+    box-shadow: none !important;
+    width: 100%; /* забезпечує, що .nav займає всю ширину батьківського елемента */
+    justify-content: flex-end;
+  }
+
+  .nav-item {
+    margin-left: auto; /* викликає переміщення елемента до правого краю */
+  }
+
+  .nav-link,
+  .address-item {
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  /* Якщо тінь застосована до конкретного контейнера навігації, замініть селектор нижче */
+  .page-header,
+  .nav,
+  .address {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .finger-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .menu {
+    margin-left: 20px;
+    column-gap: 20px;
+  }
+
+  .page-header {
+    padding: 20px;
+  }
+
+  .logo {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    animation:
+      fadeIn 0.3s,
+      fadeOut 0.3s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .back-to-top img {
+    width: 50px;
+    height: auto;
+  }
+}
