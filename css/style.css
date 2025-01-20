@@ -19,7 +19,8 @@ li,
 .list-secondary-item,
 .deskription,
 .job-date,
-.job-list {
+.job-list,
+.job-list-1 {
   font-weight: 400;
 }
 
@@ -31,6 +32,7 @@ li,
 }
 
 h1,
+h3,
 h4,
 p,
 .nav-link,
@@ -48,11 +50,8 @@ body {
   color: #434455;
 }
 
-.back-to-top {
-  width: 86px;
-  height: auto;
-}
 h1,
+h3,
 h4,
 p,
 .nav-link,
@@ -104,6 +103,7 @@ p,
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
 }
 
 /* Page Studio */
@@ -117,6 +117,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 240px;
 }
 
 .address {
@@ -179,8 +180,8 @@ img {
 
 .wrapper {
   display: flex;
-  flex-direction: row-reverse;
-  max-width: 1200px;
+  flex-direction: row;
+  /* max-width: 1300px; */
   width: 100%;
   margin: 0 auto;
   background: var(--hero-text);
@@ -310,10 +311,10 @@ html {
 /* PAGE PORTFOLIO */
 
 /**
-    |============================
-    | FINGER
-    |============================
-  */
+  |============================
+  | FINGER
+  |============================
+*/
 
 .finger-list {
   display: flex;
@@ -328,6 +329,14 @@ html {
   flex-basis: calc((100% / var(--column)) - var(--gap-column));
 }
 
+/* main .portfolio-section 
+{
+    max-width: 0;
+    margin-left: 0; 
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+} */
 .finger-text {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -367,6 +376,18 @@ html {
     transform: translateY(100%);
     opacity: 1;
   }
+}
+
+.wrapper {
+  flex-direction: row-reverse; /* Змінюємо порядок, щоб aside було зліва */
+}
+
+aside {
+  width: 423px; /* Якщо вам потрібна конкретна ширина для aside */
+}
+
+main {
+  flex: 1; /* main займатиме решту доступного місця */
 }
 
 .product {
@@ -429,8 +450,7 @@ html {
 /* CV */
 
 aside {
-  width: 373px;
-  /* висота */
+  width: 423px;
   background: #1e2939;
 }
 
@@ -466,15 +486,19 @@ aside {
 
 .list-secondary-item {
   color: #ffffff;
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
 main {
-  padding: 88px 102px 88px 102px;
+  flex: 1;
+  min-width: 0;
+  padding: 88px 50px 88px 50px;
 }
 
-.main-deskription {
-  width: 550px;
+.deskription {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -514,13 +538,18 @@ h1 {
   color: #a8a8a8;
 }
 
-.job-list {
+.job-list,
+.job-list-1 {
   font-size: 14px;
   line-height: 24px;
   color: #595959;
   padding-left: 0;
   list-style-position: inside;
   padding-bottom: 24px;
+}
+
+.job-list-1 {
+  width: 700px;
 }
 
 .education-name {
@@ -530,6 +559,7 @@ h1 {
 }
 
 .education-place {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -564,7 +594,7 @@ h1 {
   position: relative;
   width: 210px;
   height: 160px;
-  margin: 40px auto;
+  margin: 20px auto;
   perspective: 1000px;
 }
 
@@ -645,4 +675,304 @@ h1 {
 }
 .carousel__cell:nth-child(9) {
   transform: rotateY(320deg) translateZ(288px);
+}
+
+.contact-blok {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-links {
+  /* display: flex; */
+  align-items: center;
+  margin-bottom: 10px; /* Додано для відступу між рядками */
+}
+
+.bold {
+  margin-right: 10px; /* Додано для відступу між лейблом і значенням */
+  display: inline-block;
+  width: 60px;
+}
+
+.job-list li,
+.job-list-1 li,
+.list-sekondary li {
+  list-style-type: disc;
+  margin-left: 60px;
+}
+
+.list-sekondary li {
+  color: white;
+}
+
+.list-sekondary {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.job-list li::before,
+.job-list-1 li::before {
+  background-color: black; /* Зміна кольору для інших списків */
+}
+
+.project-product {
+  height: calc(500px - 40px);
+  overflow: hidden;
+  position: relative;
+}
+
+.project-text {
+  width: 100%;
+  padding: 10px;
+}
+
+.finger-list-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 80px;
+  margin: 0;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.project-item {
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.project-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column-reverse; /* Стопчикове відображення з перевернутим порядком */
+  }
+
+  aside {
+    order: 2; /* `aside` буде під `main` */
+  }
+
+  main {
+    order: 1; /* `main` буде над `aside` */
+    width: 100%; /* Повна ширина */
+    padding: 20px; /* Падінг для внутрішнього відступу */
+  }
+
+  main,
+  aside {
+    width: 100%; /* Повна ширина для обох елементів */
+  }
+
+  .carousel__cell {
+    transform: scale(0.8);
+    width: 110px;
+  }
+
+  .scene {
+    width: 130px; /* половина від 210px */
+    height: 160px; /* половина від 270px */
+  }
+
+  .carousel {
+    transform: translateZ(-144px); /* половина від -288px */
+  }
+
+  .carousel__cell:nth-child(1) {
+    transform: rotateY(0deg) translateZ(180px);
+  }
+  .carousel__cell:nth-child(2) {
+    transform: rotateY(40deg) translateZ(180px);
+  }
+  .carousel__cell:nth-child(3) {
+    transform: rotateY(80deg) translateZ(180px);
+  }
+  .carousel__cell:nth-child(4) {
+    transform: rotateY(120deg) translateZ(180px);
+  }
+  .carousel__cell:nth-child(5) {
+    transform: rotateY(160deg) translateZ(180px);
+  }
+  .carousel__cell:nth-child(6) {
+    transform: rotateY(200deg) translateZ(180px);
+  }
+  .carousel__cell:nth-child(7) {
+    transform: rotateY(240deg) translateZ(180px);
+  }
+  .carousel__cell:nth-child(8) {
+    transform: rotateY(280deg) translateZ(180px);
+  }
+  .carousel__cell:nth-child(9) {
+    transform: rotateY(320deg) translateZ(180px);
+  }
+
+  .cv-photo {
+    width: 220px;
+  }
+
+  .deskription {
+    font-size: 12px;
+  }
+
+  body,
+  .job-list,
+  .job-list-1 {
+    font-size: 14px;
+  }
+
+  .project-container {
+    padding: 0; /* Видаляємо відступи для більшого використання доступного простору */
+  }
+
+  .finger-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Знімаємо відступи, якщо вони є */
+  }
+
+  /* Зображення займають всю можливу ширину (мінус відступи) */
+  .finger-item {
+    width: 100%; /* Забезпечує, що елемент списку займає всю ширину контейнера */
+    margin: 10px 0; /* Додаємо трохи місця між елементами */
+  }
+
+  /* Забезпечуємо, що зображення займають всю ширину свого батьківського елемента */
+  .finger-item .product-list img {
+    width: 100%; /* Встановлюємо ширину зображення */
+    height: auto; /* Висота зображення автоматично змінюється для збереження пропорцій */
+  }
+
+  .project-item {
+    width: 100%; /* Займає весь доступний простір */
+    margin-bottom: 20px; /* Додаємо відступ між елементами */
+  }
+
+  .project-image {
+    width: 100%; /* Робимо зображення на повну ширину елемента */
+    height: auto; /* Зберігаємо пропорції зображення */
+  }
+
+  .address-item {
+    display: none; /* Приховує елементи в мобільному режимі */
+  }
+
+  .product-list {
+    width: 100%; /* Займає 100% ширини від finger-item */
+    margin: 0 auto; /* Центруємо, якщо потрібно */
+  }
+
+  .product-list img {
+    width: 100%; /* Зображення займає всю ширину product-list */
+    height: auto; /* Зберігаємо пропорції зображення */
+  }
+
+  .nav,
+  .nav * {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .nav-link,
+  .address-item {
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 12px;
+  }
+
+  .page-header,
+  .nav,
+  .address {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .finger-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    animation: fadeIn 0.3s, fadeOut 0.3s;
+    max-width: 50%;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .back-to-top img {
+    width: 25px;
+    height: auto;
+  }
+
+  .project-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Скидання відступів для всіх елементів може також бути корисним */
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box; /* Щоб padding не впливав на загальну ширину елементів */
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%; /* Встановлюємо ширину 100% для мобільних пристроїв */
+    padding: 0 15px; /* Додаємо невеликі відступи з боків, щоб контент не прилипав до країв екрану */
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .menu {
+    margin-left: 20px;
+    column-gap: 20px;
+  }
+
+  .logo {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .finger-list-projects {
+    padding: 0 20px;
+  }
 }
